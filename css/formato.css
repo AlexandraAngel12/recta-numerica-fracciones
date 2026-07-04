@@ -5,7 +5,7 @@
 */
 body {
     background: darkcyan;
-   
+    font-family: sans-serif;
 }
 
 #prer{
@@ -57,7 +57,7 @@ body {
 }
 
 button{
-    font-family: cursive;
+    font-family: sans-serif;
     font-size: 18px;
     margin-left: 10px;
  /*   background: linear-gradient(100deg, #91bd09, #578730); */
@@ -71,7 +71,7 @@ button{
 
 
 .cajas{
-    font-family: cursive;
+    font-family: sans-serif;
     font-size: 20px;
     margin-left: 18px;
     background: orange;
@@ -88,7 +88,7 @@ button{
     
      border-bottom-color: darkcyan;
     cursor: pointer;
-    font-family: cursive;
+    font-family: sans-serif;
     font-size: 25px;
     margin-left: 10px;
     background: white;
@@ -106,7 +106,7 @@ button{
 
 .check{
     margin-left: 20px;
-    font-family: cursive;
+    font-family: sans-serif;
     font-size: 20px;
     color: whitesmoke;
     width: 40px;
@@ -119,7 +119,7 @@ button{
 
 .vineta{
     margin-left: 5px;
-    font-family: cursive;
+    font-family: sans-serif;
     font-size: 20px;
     color: lightseagreen;
     width: 80px;
@@ -138,13 +138,13 @@ button{
 }
 
 #fracnum{
-    font-family: cursive;
+    font-family: sans-serif;
     font-size: 25px;
     color: blue;
 }
 
 #fracden{
-    font-family: cursive;
+    font-family: sans-serif;
     font-size: 25px;
     color: blue;
 }
@@ -177,7 +177,7 @@ button{
 
 .check{
     
-    font-family: cursive;
+    font-family: sans-serif;
     font-size: 20px;
     color: whitesmoke;
     width: 25px;
@@ -208,28 +208,28 @@ button{
 }
 
 #FraccionEjemplo {
-    font-family: cursive;
+    font-family: sans-serif;
     font-size: 20px;
     color: darkcyan;
 }
 
 #FraccionReferencia1 {
-    font-family: cursive;
+    font-family: sans-serif;
     font-size: 18px;
     color: darkcyan
 }
 #FraccionReferencia2 {
-    font-family: cursive;
+    font-family: sans-serif;
     font-size: 18px;
     color: darkcyan;
 }
 #FraccionReferencia3 {
-    font-family: cursive;
+    font-family: sans-serif;
     font-size: 18px;
     color: darkcyan;
 }
 #FraccionReferencia4 {
-    font-family: cursive;
+    font-family: sans-serif;
     font-size: 18px;
     color: darkcyan;
 }
@@ -259,27 +259,27 @@ button{
 }
 
 #Fraccion6 {
-    font-family: cursive;
+    font-family: sans-serif;
     font-size: 30px;
     color: orangered;
 }
 #Fraccion7 {
-    font-family: cursive;
+    font-family: sans-serif;
     font-size: 30px;
     color: orangered;
 }
 #simbolo {
-    font-family: cursive;
+    font-family: sans-serif;
     font-size: 25px;
     color: darkcyan;
 }
 #simbolo2 {
-    font-family: cursive;
+    font-family: sans-serif;
     font-size: 25px;
     color: darkcyan;
 }
 #proponefrac {
-    font-family: cursive;
+    font-family: sans-serif;
     font-size: 20px;
     color: darkcyan;
 }

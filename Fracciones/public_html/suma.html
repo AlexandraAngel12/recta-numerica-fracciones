@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<!--
+Suma de fracciones
+-->
+<html>
+    <head>
+        <title>Suma de fracciones</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/formato.css">
+        <link type="text/css" rel="stylesheet" href="css/jsxgraph.css">
+        <link rel="stylesheet" href="css/mathquill.css">
+        <script src="lib/jquery-2.2.3.min.js"></script>
+        <script src="lib/mathquill.min.js"></script>
+    </head>
+     <body id="portada">
+   
+        <script type="text/javascript">
+            window.onload = function(){
+                document.getElementById("Op5").style.background = "orange";
+            };
+        </script>
+        
+         <table id="dme" cellspacing='0' cellpadding='0' border='0' width="500"  >
+        <tr>
+            <td bgcolor="white" align="center"> <img src="img/dmeLogo.jpg" height="150" width="100"> </td>
+            <td align="center" bgcolor="white">
+              <h1 style="font-size: 30px; color: darkcyan; font-family:
+                'cursive'">&nbsp; Estudio de las fracciones en la recta numérica <br> con uso de tecnología digital</h1> &nbsp; &nbsp;
+              <h1 style="font-size: 30px; color: darkcyan; font-family:
+                'cursive'">&nbsp; <!--Por Alexandra Ángel López<br> -->
+              </h1>
+            </td>
+        </tr>
+        <tr> 
+            <td colspan="2">
+            <div id="header">
+            <ul class="nav">
+                <li> <a href="index.html" id="Op1">Inicio</a> </li>
+                <li> <a href="definicion.html" id="Op2">Definición de fracción</a></li>
+                <li> <a href="fracequivalentes.html" id="Op3">Fracciones equivalentes y comparación</a></li>
+                <li> <a href="localizacion.html" id="Op4">Localización y estimación de fracciones</a> </li>
+                <li> <a href="suma.html" id="Op5">Suma de fracciones</a> </li>
+            </ul> 
+            </div>
+            </td>     
+        </tr>
+        <tr bgcolor="white">      
+            <td colspan="2" >
+            <div id="text">  
+   
+        <p style="color: orange; font-size: 30px" >
+            Lección 4: El significado de la suma de fracciones en la recta numérica.
+        </p> <br>
+           <p id="texto2" style="color: darkcyan; font-size: 30px;">
+          Primera Parte.
+            </p> <br>
+            
+            <div class="popup" onmouseover="myFunction()" onmouseout="Oculta()">Instrucciones
+            
+                  <span class="popuptext" id="myPopup"> Esta última actividad consta al igual que las anteriores de dos partes. La "Primera Parte" contiene un único ejemplo, revísalo con cuidado y después pasa a la "Segunda Parte" donde encontrarás una serie de ejercicios propuestos, realízalos hasta que te aparezca el mensaje "Haz finalizado la lección" para concluir definitivamente.</span>
+            </div>
+         
+        <p id="texto2">
+            
+             Cuando sumamos dos fracciones en la recta, dibujamos los segmentos
+             que éstas representan y los unimos a partir del cero, el segmentos
+             que se obtiene es el resultado de la suma. 
+             Fíjate en el siguiente ejemplo: <br><br>
+        
+             <span class="azul">El segmento azul, representa la medida de &nbsp;&nbsp;&nbsp;, </span>
+           mientras que   <span class="violeta">el segmento morado representa la medida de  &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;.</span>
+        </p>    
+                
+            <div style="position: relative; left: 460px; top: -70px;"> <p id="Fraccion1"></p> </div>
+            <div style="position: relative; left: 270px; top: -90px;"> <p id="Fraccion2"></p> </div>
+       
+            <p id="texto2"> 
+            La suma de las fracciones se obtiene colocando un segmento seguido del otro, como
+            puedes ver en el siguiente recuadro, el orden de los segmentos no cambia la medida del
+            segmento que se forma al unirlos. En este caso el segmento obtenido tiene longitud &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.
+            Así pues concluimos que  &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.
+            </p>
+            <div style="position: relative; left: 260px; top: -35px;"> <p id="Fraccion3"></p> </div>
+            <div style="position: relative; left: 580px; top: -90px;"> <p id="Fraccion4"></p> </div>
+        
+        </div>
+       
+        <div style="position: relative; top: -100px;">     
+        <div style="position: relative; left: -100px; top: 30px;" id="box1"
+        class="jxgbox">
+        </div> </div> 
+        <div id="text" style="position: relative; top: -100px;"> 
+        <p id="texto2">
+            
+            En este caso fue sencillo porque las fracciones tenían el mismo denominador,
+            la pregunta es ¿cómo sumamos fracciones con distintos denominadores? 
+            Analizemos un poco la situación.
+      <!--      pero ¿podemos sumar de la misma manera dos fracciones con
+            denominadores diferentes? La respuesta es sí, encontrando fracciones equivalentes 
+            a las dadas que compartan el mismo denominador.
+            En este caso fue sencillo porqué las fracciones tenían el mismo denominador,
+            pero ¿podemos sumar de la misma manera fracciones con
+            denominadores diferentes? En lo que respecta a la unión de segmentos, la respuesta es sí;
+            sin embargo si se trata de expresar simbólicamente el resultado de la adición
+            es necesario que las fracciones tengan el mismo denominador. 
+            En la actividad 2, hemos visto ya cómo hacer esto. -->
+        </div>
+      <div style="position: relative; top: -100px;">   
+         <div style="position: relative; left: -100px; top: 30px;" id="box2"
+        class="jxgbox">
+         </div> </div>
+           <div id="text" style="position: relative; top: -100px;"> 
+        <p id="texto2">
+            
+            Observamos que en el recuadro de arriba están representadas las medidas o longitudes
+            de las fracciones y al unirlos, en la parte superior del recuadro se han obtenido dos segmentos más,
+            que representan la suma de ambas fracciones.
+            Sin embargo simbólicamente no es posible escribir el resultado de la suma de las fracciones
+            pues, no tenemos una fracción específica que se corresponda con la longitud de los segmentos
+            que se encuentran en la parte superior. Pero mira lo que pasa cuando empleamos fracciones
+            equivalentes que comparten el mismo denominador para las fracciones que queremos sumar.
+            
+        </p></div>    
+                <div style="position: relative; top: -100px;">   
+        <div style="position: relative; left: -100px; top: 30px;" id="box3"
+        class="jxgbox">
+        </div> </div>
+        <div id="text" style="position: relative; top: -100px;"> 
+        <p id="texto2">
+            
+            Ahora sí tenemos una fracción que se corresponde con la longitud del segmento
+            que resulta de la unión de los segmentos que representan a las fracciones que queremos
+            sumar; y de esta manera nos es posible expresar la suma simbólicamente como &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.
+            
+        </p></div>
+         <div style="position: relative; left: 365px; top: -130px;"> <p id="Fraccion5"></p> </div>
+        
+        
+         
+
+           <div id="text">  
+               
+        <p id="texto2" style="color: darkcyan; font-size: 30px; position: relative; top: -100px;">
+            Segunda Parte  <br><br>
+        </p>
+        <p id="texto2" style="position: relative; top: -100px;">
+            En el siguiente recuadro se muestra una recta numérica, un "deslizador" y 
+            dos puntos móviles, cada uno con una fracción propuesta. Con ayuda del deslizador
+            arrastra los puntos hacia la posición que les corresponde en la recta, después mueve 
+            el deslizador hasta que observes que ambos puntos quedan etiquetados 
+            inferiormente por fracciones con el mismo denominador. Al terminar
+            haz <i>click</i> en el botón "Construir Segmentos". Cuando tengas los segmentos
+            arrastra uno de ellos detrás del otro, fíjate en la longitud del segmento obtenido y
+            finalmente captura el resultado de la suma donde se indique.
+           
+            
+            
+            
+            
+         <!--   En el siguiente recuadro te toca a ti encontrar el resultado de la suma de las fracciones
+            propuestas; para ello primero ubica las fracciones en la posición correcta y luego 
+            da <i>click</i> en el botón "Construir Segmentos". Una vez que los segmentos se hayan 
+            dibujado, únelos, después con ayuda del deslizador encuentra fracciones equivalentes a las dadas
+            de manera que puedas expresar mediante una fracción la longitud de este segmento.  -->
+        </p>
+        </div> 
+         <div style="position: relative; top: -100px;">
+         <div style="position: relative; left: -100px; top: 30px;" id="boxespecial"
+        class="jxgbox">
+        </div></div>
+         <div style="position: relative; left: 440px; top: -30px;"><button class="button"
+         id="btn1">Construir Segmentos</button> </div> <br><br><br>
+        
+         <div id="CapturaRespuesta" style="display:none; position: relative; top:-100px;">
+        <div id="text"> 
+            <p id="texto2">
+                A continuación captura el resultado de la suma de las fracciones y verifica tu resultado
+                dando <i>enter.</i>
+            </p>    
+        </div>
+        <div style="position: relative; left: 360px; top: 25px;"> <p id="Fraccion6"></p> </div>
+        <div style="position: relative; left: 500px; top: -40px;"> <p id="Fraccion7"></p> </div>
+     
+        
+        <div style="position: relative; left: 600px; top: -100px;"><button class="button"
+       id="btn3">Continuar</button> </div>
+         
+         </div>
+          <div style="position: relative; top: -50px;"> <canvas
+         id="canvas" width="1000" height="150"> El navegador no implementa
+         el canvas </canvas>&nbsp; 
+        </div> 
+      </td>
+      </tr>
+     </table>  
+         <script>
+              var popup = document.getElementById("myPopup");
+        function myFunction() {
+            
+            popup.classList.toggle("show");
+        }
+        function Oculta() {
+        
+            popup.classList.toggle("hide");
+        }
+            </script>
+            <script src="js/algTeXToLineal.js"></script>
+            <script type="text/javascript" src="js/deslizador.js"></script>
+            <script type="text/javascript" src="js/suma.js"></script>
+            <script type="text/javascript" src="js/jsxgraphcore.js"></script>
+       
+    </body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<!--
+Primer actividad: consiste en una tarea de localización de una fracción en la recta 
+numérica
+-->
+<html>
+<head>
+        <title>Localización y estimación de fracciones</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/formato.css">
+        <link type="text/css" rel="stylesheet" href="css/jsxgraph.css">
+        <link rel="stylesheet" href="css/mathquill.css">
+        <script src="lib/jquery-2.2.3.min.js"></script>
+        <script src="lib/mathquill.min.js"></script>
+    </head>
+    <body id="portada">
+   
+        <script type="text/javascript">
+            window.onload = function(){
+                document.getElementById("Op4").style.background = "orange";
+            };
+        </script>
+        
+         <table id="dme" cellspacing='0' cellpadding='0' border='0' width="500"  >
+        <tr>
+            <td bgcolor="white" align="center"> <img src="img/dmeLogo.jpg" height="150" width="100"> </td>
+            <td align="center" bgcolor="white">
+              <h1 style="font-size: 30px; color: darkcyan; font-family:
+                'cursive'">&nbsp;Estudio de las fracciones en la recta numérica <br> con uso de tecnología digital</h1> &nbsp; &nbsp;
+              <h1 style="font-size: 30px; color: darkcyan; font-family:
+                'cursive'">&nbsp; <!--Por Alexandra Ángel López<br> -->
+              </h1>
+            </td>
+        </tr>
+        <tr> 
+            <td colspan="2">
+            <div id="header">
+            <ul class="nav">
+                <li> <a href="index.html" id="Op1">Inicio</a> </li>
+                <li> <a href="definicion.html" id="Op2">Definición de fracción</a></li>
+                <li> <a href="fracequivalentes.html" id="Op3">Fracciones equivalentes y comparación</a></li>
+                <li> <a href="localizacion.html" id="Op4">Localización y estimación de fracciones</a> </li>
+                <li><a href="suma.html" id="Op5">Suma de fracciones</a> </li>
+            </ul> 
+            </div>
+            </td>     
+        </tr>
+        <tr bgcolor="white">      
+            <td colspan="2" >
+            <div id="text">  
+   
+        <p style="color: orange; font-size: 30px" >
+            Lección 3. La posición de las fracciones en la recta.       
+        </p> <br>
+           
+        <p id="texto2" style="color: darkcyan; font-size: 30px"> Primera Parte 
+        </p> <br><br>
+        
+               <div class="popup" onmouseover="myFunction()" onmouseout="Oculta()">Instrucciones
+        <span class="popuptext" id="myPopup"> Realiza el ejercicio propuesto en la "Primera Parte" y practica cuanto desees, generando nuevas fracciones al dar click en el botón "Reiniciar". Se recomienda practiques esta parte al menos 7 veces. Al hacer click en "Segunda parte" se muestra un ejercicio guiado a través del botón "Continuar", realiza todos los ejercicios hasta que se te indique que "haz completado la lección" para pasar a la siguiente y última pestaña.</span>
+        </div> 
+           
+       
+        <p id="texto2">
+             A cada fracción le corresponde una posición en la recta numérica,
+             la cual podemos <b>determinar</b> a partir de la información que nos proporcionan
+             el numerador y el denominador. <br> <br>
+             Por ejemplo para determinar la posición de la fracción &nbsp; &nbsp; , primero
+             se divide cada unidad en 3 segmentos, luego contamos 4 segmentos.
+        </p>
+          </div>
+        
+        <div style="position: relative; left: 735px; top: -70px;"> <p id="FraccionEjemplo"></p> </div>
+         
+          <div style="position: relative; left: -100px; top: 30px;" id="box1"
+            class="jxgbox"><br><br>
+          </div>
+        
+            <div id="text"> 
+            <p id="texto2">
+            Observa como el denominador indica en cuantos segmentos se divide cada unidad, mientras
+            que el numerador indica cuantos de estos segmentos debemos tomar, comenzando
+            a contar a partir del 0 y hacia la derecha.      </p> 
+            
+            <p id="ejercicio"> <br><br> Ubica la fracción  &nbsp;&nbsp;&nbsp;&nbsp; en la posición que le corresponde en la recta numérica.
+            Primero indica en cuantas partes quieres fraccionar las unidades
+            luego haz <i>click</i> en el punto rojo y arrástralo a su posición correspondiente en la recta.
+            Finalmente, verifica tu resultado.</p>
+            </div>   
+        
+         <div style="position: relative; left: 320px; top: -140px;"> <p id="proponefrac"></p> </div> 
+         <div style="position: relative; left: 150px; top: 100px;"> <canvas id="canvas" width="500" height="10"> El navegador no implementa el canvas </canvas> </div>  
+         <div style="position: relative; left: -100px; top: 30px;" id="box" class="jxgbox"></div>
+         <div id="text">   
+            <p id="texto2" style="position: relative; top: -370px; color: darkcyan;">   Fraccionar la unidad en </p> </div> 
+            <p id="texto2" style="position: relative; left: 120px; top: -370px;"><br>   Haz <i>click</i> en el cuadrito, escribe un número y <br>presiona <i>enter</i> </p>     
+        <div style="position: relative; left: 300px; top: 50px;"> 
+            <p style="position: relative; left: 95px; top: -535px;" id="fraccion"></p> </div>
+    
+    <div style="position: relative; left: 360px; top: -190px;">
+        <button class="button" id="Verificar">Verificar</button></div>
+    <div style="position: relative; left: 600px; top: -235px;">
+        <button class="button" id="Reset"><a href="#ejercicio">Reiniciar</a></button> </div>
+
+      <!--   <p id="Muestra-Oculta" style="color: purple; font-size: 30px; position: relative; left: 200px; top:0px;">
+             <a onMouseover="this.style.color='orange'" onMouseout="this.style.color='darkcyan'" id="link" href="#box2">Segunda Parte </a>
+        </p> -->
+         <div style="position: relative; left: 100px; top: -190px;">
+              <button class="segparte" id="Muestra-Oculta" > Segunda Parte</button> 
+        </div>  
+                
+        <div id="SegundaParte" style="display:none"> 
+        <div id="text" style="position: relative;  top: -190px;">  
+      
+        <p id="texto2">   
+             A cada fracción le corresponde una posición en la recta numérica,
+             la cual se puede <b>estimar</b>, es decir, es posible calcular aproximadamente la posición que le corresponde en la recta numérica. <br> <br>
+             Esto lo podemos hacer si conocemos la posición de otra fracción que nos sirva de referencia. Fíjate en el siguiente ejemplo:
+        </p>
+        </div> <div style="position: relative;  top: -190px;">
+             <div style="position: relative; left: -100px; top: 30px;" id="box2"
+            class="jxgbox"><br><br>
+             </div> </div>
+         <div id="text">  
+           <p id="texto2" style="position: relative;  top: -190px;">
+            En este caso fue la fracción &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  , la que nos sirvió de referencia, nota
+            también la siguiente equivalencia de fracciones:  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;, luego es posible 
+            ubicar la fracción &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"un poquito" a la derecha de la fracción
+            
+            </p>
+        </div>
+        <div style="position: relative;  top: -190px;"> 
+        <div style="position: relative; left: 470px; top: -100px;"> <p id="FraccionReferencia1"></p> </div>
+         <div style="position: relative; left: 635px; top: -110px;"> <p id="FraccionReferencia2"></p> </div> 
+         <div style="position: relative; left: 242px; top: -115px;"> <p id="FraccionReferencia3"></p> </div> 
+          <div style="position: relative; left: 730px; top: -160px;"> <p id="FraccionReferencia4"></p> </div> 
+          </div>
+            <div style="position: relative;  top: -400px;"> 
+        <div id="text">  
+            <p id="texto2"> 
+                A continuación se muestra una recta donde se aprecia una fracción marcada y un punto rojo en la esquina inferior izquierda con una fracción propuesta.
+                Empleando la fracción marcada como referencia, <b>estima</b> la posición de la fracción indicada en el punto rojo.
+                Nota que al pasar el <i>mouse</i> sobre la recta, se iluminan segmentos de la misma longitud que la
+                fracción de referencia.
+            </p>
+        </div> </div>
+        
+          
+          <div style="position: relative;  top: -400px;"> 
+          <div style="position: relative; left: -100px; top: 30px;" id="box3esp"
+            class="jxgbox"></div> </div>
+        <div style="position: relative; left: 360px; top: -320px;"><button class="button"
+        id="VerificaAprox">Verificar</button> </div>
+        <div style="position: relative; left: 600px; top: -365px;"><button class="button"
+        id="ContinuaAprox">Continuar</button> </div>    
+            </div>   
+      </td>
+      </tr>
+     </table>
+    <script type="text/javascript" src="js/algTeXToLineal.js"></script>
+    <script type="text/javascript" src="js/deslizador.js"></script>
+    <script type="text/javascript" src="js/forme.js"></script>
+    <script type="text/javascript" src="js/jsxgraphcore.js"></script>
+    <script>
+             var popup = document.getElementById("myPopup");
+        function myFunction() {
+            
+            popup.classList.toggle("show");
+        }
+        function Oculta() {
+        
+            popup.classList.toggle("hide");
+        }
+            </script>
+     
+    </body>
+</html>
+
